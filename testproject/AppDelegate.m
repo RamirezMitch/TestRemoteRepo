@@ -11,7 +11,7 @@
 #import "FirstViewController.h"
 
 #import "SecondViewController.h"
-
+#import "FMInfoPanelViewController.h"
 @implementation AppDelegate
 
 - (void)dealloc
@@ -26,7 +26,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    UIViewController *viewController2 = [[[FMInfoPanelViewController alloc] initWithNibName:@"FMInfoPanelView" bundle:nil] autorelease];
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;

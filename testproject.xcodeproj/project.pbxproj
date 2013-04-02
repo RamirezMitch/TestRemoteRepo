@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48957837170AD1160040EA03 /* FMInfoPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */; };
+		4895783A170AD1F20040EA03 /* FMInfoPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48957838170AD1F20040EA03 /* FMInfoPanelView.xib */; };
+		4895783C170AD2120040EA03 /* infoPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895783B170AD2120040EA03 /* infoPanel.png */; };
 		48D76AC617093566000E123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC517093566000E123F /* UIKit.framework */; };
 		48D76AC817093566000E123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC717093566000E123F /* Foundation.framework */; };
 		48D76ACA17093566000E123F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC917093566000E123F /* CoreGraphics.framework */; };
@@ -27,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48957834170AD0BF0040EA03 /* FMInfoPanelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FMInfoPanelViewController.h; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/FMInfoPanelViewController.h; sourceTree = SOURCE_ROOT; };
+		48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FMInfoPanelViewController.m; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/FMInfoPanelViewController.m; sourceTree = SOURCE_ROOT; };
+		48957836170AD0BF0040EA03 /* infoPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoPanel.png; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/infoPanel.png; sourceTree = SOURCE_ROOT; };
+		48957839170AD1F20040EA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/en.lproj/FMInfoPanelView.xib; sourceTree = SOURCE_ROOT; };
+		4895783B170AD2120040EA03 /* infoPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoPanel.png; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/infoPanel.png; sourceTree = SOURCE_ROOT; };
 		48D76AC217093566000E123F /* testproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D76AC517093566000E123F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48D76AC717093566000E123F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +104,11 @@
 		48D76ACB17093566000E123F /* testproject */ = {
 			isa = PBXGroup;
 			children = (
+				48957834170AD0BF0040EA03 /* FMInfoPanelViewController.h */,
+				48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */,
+				4895783B170AD2120040EA03 /* infoPanel.png */,
+				48957838170AD1F20040EA03 /* FMInfoPanelView.xib */,
+				48957836170AD0BF0040EA03 /* infoPanel.png */,
 				48D76AD417093566000E123F /* AppDelegate.h */,
 				48D76AD517093566000E123F /* AppDelegate.m */,
 				48D76ADD17093566000E123F /* FirstViewController.h */,
@@ -188,6 +201,8 @@
 				48D76AEA17093566000E123F /* second@2x.png in Resources */,
 				48D76AED17093566000E123F /* FirstViewController.xib in Resources */,
 				48D76AF017093566000E123F /* SecondViewController.xib in Resources */,
+				4895783A170AD1F20040EA03 /* FMInfoPanelView.xib in Resources */,
+				4895783C170AD2120040EA03 /* infoPanel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48957837170AD1160040EA03 /* FMInfoPanelViewController.m in Sources */,
 				48D76AD217093566000E123F /* main.m in Sources */,
 				48D76AD617093566000E123F /* AppDelegate.m in Sources */,
 				48D76ADF17093566000E123F /* FirstViewController.m in Sources */,
@@ -208,6 +224,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		48957838170AD1F20040EA03 /* FMInfoPanelView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48957839170AD1F20040EA03 /* en */,
+			);
+			name = FMInfoPanelView.xib;
+			sourceTree = "<group>";
+		};
 		48D76ACE17093566000E123F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
