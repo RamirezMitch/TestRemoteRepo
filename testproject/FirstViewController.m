@@ -26,6 +26,7 @@
 
 -(IBAction)displayShare:(id)sender
 {
+        NSLog(@"Main Changes Test");
     UIActionSheet *shareActionSheet = [[[UIActionSheet alloc] initWithTitle:@""
                                                                    delegate:self
                                                           cancelButtonTitle:@"Cancel"
