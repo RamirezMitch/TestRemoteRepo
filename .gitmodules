@@ -1,3 +1,4 @@
-[submodule "Submodules/Sharekit"]
-	path = Submodules/Sharekit
-	url = https://github.com/ShareKit/ShareKit.git
+
+[submodule "Submodules/FMScrollIndicatorInfoPanel"]
+	path = Submodules/FMScrollIndicatorInfoPanel
+	url = https://github.com/RamirezMitch/FMScrollIndicatorInfoPanel.git
