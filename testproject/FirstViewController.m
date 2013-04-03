@@ -14,6 +14,7 @@
 
 @implementation FirstViewController
 @synthesize buttonShare;
+@synthesize gradientView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -102,6 +103,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+     self.gradientView.colors = @[[UIColor grayColor], [UIColor whiteColor]];
     NSLog(@"test log ..... ");
 }
 
@@ -110,5 +112,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)dealloc{
+    [buttonShare release];
+    [gradientView release];
+    [super dealloc];
+}
 @end

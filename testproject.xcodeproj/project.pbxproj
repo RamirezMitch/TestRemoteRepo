@@ -10,6 +10,8 @@
 		48957837170AD1160040EA03 /* FMInfoPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */; };
 		4895783A170AD1F20040EA03 /* FMInfoPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48957838170AD1F20040EA03 /* FMInfoPanelView.xib */; };
 		4895783C170AD2120040EA03 /* infoPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4895783B170AD2120040EA03 /* infoPanel.png */; };
+		489BE0F6170C294700DF7F1A /* NSCBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489BE0F5170C294700DF7F1A /* NSCBGradientView.m */; };
+		489BE0F8170C297100DF7F1A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489BE0F7170C297100DF7F1A /* QuartzCore.framework */; };
 		48D76AC617093566000E123F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC517093566000E123F /* UIKit.framework */; };
 		48D76AC817093566000E123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC717093566000E123F /* Foundation.framework */; };
 		48D76ACA17093566000E123F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D76AC917093566000E123F /* CoreGraphics.framework */; };
@@ -35,6 +37,9 @@
 		48957836170AD0BF0040EA03 /* infoPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoPanel.png; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/infoPanel.png; sourceTree = SOURCE_ROOT; };
 		48957839170AD1F20040EA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/en.lproj/FMInfoPanelView.xib; sourceTree = SOURCE_ROOT; };
 		4895783B170AD2120040EA03 /* infoPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoPanel.png; path = Submodules/FMScrollIndicatorInfoPanel/FMScrollIndicatorInfoPanel/infoPanel.png; sourceTree = SOURCE_ROOT; };
+		489BE0F4170C294700DF7F1A /* NSCBGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCBGradientView.h; sourceTree = "<group>"; };
+		489BE0F5170C294700DF7F1A /* NSCBGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCBGradientView.m; sourceTree = "<group>"; };
+		489BE0F7170C297100DF7F1A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		48D76AC217093566000E123F /* testproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D76AC517093566000E123F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48D76AC717093566000E123F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489BE0F8170C297100DF7F1A /* QuartzCore.framework in Frameworks */,
 				48D76AC617093566000E123F /* UIKit.framework in Frameworks */,
 				48D76AC817093566000E123F /* Foundation.framework in Frameworks */,
 				48D76ACA17093566000E123F /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +80,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489BE0F2170C290600DF7F1A /* FMInfoPanel */ = {
+			isa = PBXGroup;
+			children = (
+				48957834170AD0BF0040EA03 /* FMInfoPanelViewController.h */,
+				48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */,
+				4895783B170AD2120040EA03 /* infoPanel.png */,
+				48957838170AD1F20040EA03 /* FMInfoPanelView.xib */,
+			);
+			name = FMInfoPanel;
+			sourceTree = "<group>";
+		};
+		489BE0F3170C291A00DF7F1A /* GradientVIew */ = {
+			isa = PBXGroup;
+			children = (
+				489BE0F4170C294700DF7F1A /* NSCBGradientView.h */,
+				489BE0F5170C294700DF7F1A /* NSCBGradientView.m */,
+			);
+			name = GradientVIew;
+			sourceTree = "<group>";
+		};
 		48D76AB917093566000E123F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +120,7 @@
 		48D76AC417093566000E123F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				489BE0F7170C297100DF7F1A /* QuartzCore.framework */,
 				48D76AC517093566000E123F /* UIKit.framework */,
 				48D76AC717093566000E123F /* Foundation.framework */,
 				48D76AC917093566000E123F /* CoreGraphics.framework */,
@@ -104,10 +131,8 @@
 		48D76ACB17093566000E123F /* testproject */ = {
 			isa = PBXGroup;
 			children = (
-				48957834170AD0BF0040EA03 /* FMInfoPanelViewController.h */,
-				48957835170AD0BF0040EA03 /* FMInfoPanelViewController.m */,
-				4895783B170AD2120040EA03 /* infoPanel.png */,
-				48957838170AD1F20040EA03 /* FMInfoPanelView.xib */,
+				489BE0F3170C291A00DF7F1A /* GradientVIew */,
+				489BE0F2170C290600DF7F1A /* FMInfoPanel */,
 				48957836170AD0BF0040EA03 /* infoPanel.png */,
 				48D76AD417093566000E123F /* AppDelegate.h */,
 				48D76AD517093566000E123F /* AppDelegate.m */,
@@ -218,6 +243,7 @@
 				48D76AD617093566000E123F /* AppDelegate.m in Sources */,
 				48D76ADF17093566000E123F /* FirstViewController.m in Sources */,
 				48D76AE617093566000E123F /* SecondViewController.m in Sources */,
+				489BE0F6170C294700DF7F1A /* NSCBGradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
